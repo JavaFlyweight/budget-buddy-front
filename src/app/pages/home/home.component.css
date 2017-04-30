@@ -1,0 +1,62 @@
+﻿.budget-hero-section {
+  min-height: 500px;
+  padding: 40px;
+}
+
+.budget-hero-logo {
+  margin-top: 30px;
+  width: 300px;
+  height: 300px;
+}
+
+.budget-slogan {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.budget-sub-slogan {
+  margin-top: 24px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.budget-section {
+  background: #EFEFEF;
+  padding: 40px;
+}
+
+.budget-card {
+  width: 100%;
+  overflow: unset;
+  margin-top: 30px;
+}
+
+  .budget-card .mdl-card__title {
+    min-height: 90px;
+  }
+
+  .budget-card .mdl-card__title-text {
+    margin: 0 auto;
+  }
+
+.budget-fab {
+  position: absolute;
+  bottom: -28px;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  background: #BBDEFB !important;
+}
+
+.register-button {
+  color: #BBDEFB;
+  padding: 5px 20px;
+  min-width: 120px;
+}
+
+.budget-input {
+  margin: 0 auto;
+  width: 80%;
+}

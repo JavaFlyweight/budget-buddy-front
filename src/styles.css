@@ -1,0 +1,12 @@
+﻿/* You can add global styles to this file, and also import other style files */
+html, body, h1, h2, h3, h4, h5, h6, span, .mdl-layout-title, .mdl-button, .mdl-chip, .mdl-typography--display-2, .mdl-typography--headline {
+  font-family: 'Poppins', 'Roboto', sans-serif !important;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+  color: #BBDEFB !important;
+}
+
+.mdl-textfield__label:after {
+  background-color: #BBDEFB !important;
+}
