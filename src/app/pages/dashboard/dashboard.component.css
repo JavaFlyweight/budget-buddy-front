@@ -1,1 +1,63 @@
-﻿
+﻿.mdl-tabs__tab-bar .material-icons {
+  margin-right: 10px;
+}
+
+.budgets-list {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.budget-card, .budget-card-add {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.budget-card {
+  background: #FBC02D;
+}
+
+  .budget-card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  }
+
+.budget-card-add {
+  border: 2px dashed #FBC02D;
+}
+
+  .budget-card-add:hover {
+    background: rgba(251,192,45,0.25);
+    border: 2px solid #FBC02D;
+  }
+
+.budget-icon {
+  margin: 30px 0;
+}
+
+  .budget-icon .material-icons {
+    font-size: 42px;
+  }
+
+.budget-text {
+  margin: 20px 0 10px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.budget-dates {
+  margin: 10px 0;
+  font-size: 1.4em;
+  color: #00695c;
+}
+
+.budget-details {
+  left: unset;
+  right: 0;
+  width: 300px;
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+  .budget-details.is-visible {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }

@@ -1,0 +1,11 @@
+﻿:host {
+  background-color: #00695C !important;
+}
+
+.mdl-layout-title {
+	font-size: 24px;
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+	padding: 0px 16px;
+}

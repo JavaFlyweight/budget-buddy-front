@@ -3,6 +3,11 @@
   padding: 40px;
 }
 
+  .budget-hero-section .budget-cta {
+    margin-top: 40px;
+    min-width: 120px;
+  }
+
 .budget-hero-logo {
   margin-top: 30px;
   width: 300px;
@@ -20,6 +25,7 @@
   margin-top: 24px;
   font-size: 36px;
   font-weight: 400;
+  line-height: 1;
 }
 
 .budget-section {
@@ -41,17 +47,22 @@
     margin: 0 auto;
   }
 
-.budget-fab {
-  position: absolute;
-  bottom: -28px;
-  right: 0;
-  left: 0;
-  z-index: 3;
-  background: #BBDEFB !important;
-}
+  .budget-card .material-icons {
+    margin: 15px auto;
+    color: #00695c !important;
+    font-size: 2.5em;
+  }
+
+  .budget-card .mdl-card__supporting-text {
+    padding: 0 16px 30px;
+    color: black;
+    font-size: 16px;
+  }
+
+
 
 .register-button {
-  color: #BBDEFB;
+  color: #00695c;
   padding: 5px 20px;
   min-width: 120px;
 }

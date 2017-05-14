@@ -1,2 +1,55 @@
-﻿<h1>Hello Dasboard</h1>
+﻿<div mdl class="mdl-grid">
+  <div class="mdl-cell mdl-cell--8-col">
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <div class="mdl-tabs__tab-bar">
+        <a href="#my-budgets-panel" class="mdl-tabs__tab is-active budget-row">
+          <i class="material-icons">assessment</i>My budgets
+        </a>
+        <a href="#shared-budgets-panel" class="mdl-tabs__tab budget-row">
+          <i class="material-icons">share</i>Shared
+        </a>
+      </div>
+      <div class="mdl-tabs__panel is-active" id="my-budgets-panel">
+        <div class="mdl-grid budgets-list">
+          <div class="budget-card mdl-cell mdl-cell--4-col mdl-shadow--2dp"
+               [@slideDown]
+               *ngFor="let budget of budgets"
+               (click)="selectBudget(budget)">
+            <div class="budget-icon">
+              <i class="material-icons">account_balance_wallet</i>
+            </div>
+            <div class="budget-text">
+              <span>{{budget.balance}} PLN</span>
+            </div>
+            <div class="budget-dates">
+              <span>Till {{budget.dateTo | date: 'dd/MM/yyyy'}}</span>
+            </div>
+          </div>
+          <div class="budget-card-add mdl-cell mdl-cell--4-col mdl-typography--text-center" [@slideDown]>
+            <div class="budget-icon">
+              <i class="material-icons">add_circle_outline</i>
+            </div>
+            <div class="budget-text">
+              <span>Add new</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-tabs__panel" id="shared-budgets-panel">
+        Shared budgets
+      </div>
+    </div>
+  </div>
+  <div class="budget-details mdl-shadow--16dp mdl-layout__drawer"
+       [class.is-visible]="isSelected">
+    <span class="mdl-layout-title">Your budget</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-button mdl-js-button mdl-button--raised budget-cta"
+         routerLink="/dashboard"
+         (click)="closeBudget()">
+        Close
+      </a>
+    </nav>
+  </div>
+</div>
 

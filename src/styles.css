@@ -3,10 +3,48 @@ html, body, h1, h2, h3, h4, h5, h6, span, .mdl-layout-title, .mdl-button, .mdl-c
   font-family: 'Poppins', 'Roboto', sans-serif !important;
 }
 
+.budget-cta {
+  padding: 3px 24px;
+  background: #FBC02D;
+}
+
+  .budget-cta:hover {
+    background: #D8A327;
+  }
+
+.budget-row {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* This section contains overwritten components from mdl*/
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-  color: #BBDEFB !important;
+  color: #00695c !important;
 }
 
 .mdl-textfield__label:after {
-  background-color: #BBDEFB !important;
+  background-color: #00695c !important;
+}
+
+.mdl-tabs__tab-bar {
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.mdl-tabs__tab:hover {
+  cursor: pointer;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  background: #00695c;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  background: #00695c;
+}
+
+.mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
+  background: #00695c;
 }
